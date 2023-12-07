@@ -1,17 +1,15 @@
-import React from 'react';
-import './App.module.scss';
+import { HashRouter } from "react-router-dom";
 import BaseLayout from "./components/BaseLayout";
-import {BrowserRouter} from "react-router-dom";
 
 function App() {
    return (
       <div>
-         <BrowserRouter>
+         {/* Use HashRouter instead of BrowserRouter */}
+         <HashRouter>
             <BaseLayout/>
-         </BrowserRouter>
+         </HashRouter>
       </div>
    );
 }
-
 
 export default App;
