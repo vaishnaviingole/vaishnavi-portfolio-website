@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  padding: 2rem;
+}
+
+.education {
+  flex: 1; /* Adjust to occupy the entire left side */
+}
+
+.educationHeader {
+  background: linear-gradient(135deg, teal, skyblue);
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.educationContent {
+  background: white;
+  border: 3px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Add gradient border */
+  padding: 5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: large;
+  color: rgb(8, 110, 110);
+  font-size: large;
+  font-weight:500;
+}
+
+.educationItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 60px;
+    margin-right: 2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.skills {
+  flex: 1; /* Adjust to occupy the entire right side */
+  margin-left: 2rem; /* Add margin for separation between education and skills */
+}
+
+.skillHeader {
+  background: linear-gradient(135deg, teal, skyblue);
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   font-size: large;
+}
+
+.skillContent {
+  background: white;
+  border: 10px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Add gradient border */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  color: rgb(8, 110, 110);
+  flex-wrap: wrap; /* Make the content wrap into multiple rows */
+  justify-content: space-between; /* Spread the content evenly */
+}
+
+.skillItem {
+  width: 48%; /* Set the width to occupy two columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 200px;
+    height: 120px; /* Set the height to maintain the aspect ratio */
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}

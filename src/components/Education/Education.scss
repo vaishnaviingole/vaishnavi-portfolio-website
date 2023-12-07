@@ -1,0 +1,60 @@
+// SkillsEd.module.scss
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education,
+.skills {
+  width: 48%;  // Adjust the width as needed
+}
+
+.skillHeader,
+.educationHeader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.educationContent,
+.skillContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.educationItem,
+.skillItem {
+  flex: 0 0 calc(50% - 0.5rem);  // Two items in a row with a small gap
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.educationItem img,
+.skillItem img {
+  width: 60px;  // Adjust the width as needed
+  height: 60px;  // Adjust the height as needed
+  margin-right: 1rem;
+}
+
+.skillItem {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillItem:hover {
+  transform: scale(1.1);
+}
+
+.skillItem img {
+  width: 80px;  // Adjust the width as needed
+  height: 80px;  // Adjust the height as needed
+  margin-bottom: 0.5rem;
+}
+
+.skillItem p {
+  margin: 0;
+  font-size: 0.9rem;
+}
