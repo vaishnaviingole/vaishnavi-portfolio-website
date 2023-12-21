@@ -9,12 +9,12 @@ const links = [
     {
         name: 'Home',
         to: '/',
-        active: 'home'
+        active: 'Home'
     },
     {
         name: 'About Me',
         to: '/about',
-        active: 'about'
+        active: 'About'
     },
     // {
     //     name: 'Education',
@@ -31,7 +31,7 @@ const links = [
     {
         name: 'Projects',
         to: '/portfolio',
-        active: 'projects'
+        active: 'Projects'
     }
 ]
 
