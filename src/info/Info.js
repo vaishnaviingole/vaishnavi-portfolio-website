@@ -4,6 +4,7 @@ import mock2 from "../img/mock2.png"
 import todo from "../img/todo.jpg"
 import vc from "../img/vc.jpg"
 import bank from "../img/bank.jpg"
+import memory_game3 from "../img/memory_game3.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -123,14 +124,16 @@ export const info = {
             source: "https://github.com/vaishnaviingole/VirtualClassroom-Git",
             image: vc,
             imageSize: { width:160 , height: 150 }
+        },
+        
+        {
+            title: "Memory Game",
+            
+            source: "https://github.com/vaishnaviingole/JavascrpitHandsOn/tree/main/MemoryGame",
+            image: memory_game3,
+            imageSize: { width:160 , height: 150 }
         }
         
-        // {
-        //     title: "Project 4",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock4
-        // },
         // {
         //     title: "Project 5",
         //     live: "https://paytonpierce.dev",
