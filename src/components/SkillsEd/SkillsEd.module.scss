@@ -1,114 +1,111 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Container for Sections */
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem;
-  gap: 2rem;
+  gap: 20px;
+  padding: 40px;
 }
 
-/* Left Section (Experience + Education) */
-.leftSection {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 60%;
-}
-
-/* Experience */
-.experience {
-  background: #fff;
-  padding: 1.5rem;
+/* Common Card Style */
+.card {
+  background: white;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid teal;
-}
-
-.experienceHeader {
-  background: linear-gradient(135deg, teal, skyblue);
-  padding: 1rem;
-  color: white;
+  padding: 20px;
   text-align: center;
-  font-size: 1.2rem;
-  border-radius: 8px 8px 0 0;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
 }
 
-.companyLogo {
+/* Experience and Education Cards */
+.experience, .education {
+  width: 48%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience h2, .education h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.skills-icons img {
   width: 60px;
-  margin-bottom: 1rem;
+  height: 60px;
+  transition: transform 0.3s;
 }
 
-/* Education */
-.education {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid teal;
-}
-
-.educationHeader {
-  @extend .experienceHeader;
-}
-
-.educationItem {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Right Section (Skills) */
-.rightSection {
-  width: 35%;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid teal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skillHeader {
-  @extend .experienceHeader;
-}
-
-.skillContent {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.skillRow {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-}
-
-.skillItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.skillItem:hover {
+.skills-icons img:hover {
   transform: scale(1.1);
 }
 
-.skillItem img {
-  width: 80px;
-  height: 80px;
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #007bff;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
-
-  .leftSection, .rightSection {
-    width: 90%;
+  .experience, .education, .skills {
+      width: 100%;
+  }
+  .skills-icons {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
