@@ -27,7 +27,7 @@ export default function SkillsAndEducation() {
               <img src={wiproLogo} alt="Wipro Logo" className={Style.companyLogo} />
               <div>
                 <p><strong>Project Engineer - Wipro</strong></p>
-                <p>July 2023 - Present</p>
+                <p>June 2024 - Present</p>
                 <p>Enhancing and customizing ServiceNow applications, focusing on system integrations and automating workflows. Expertise in JavaScript and REST API development.</p>
               </div>
             </div>
