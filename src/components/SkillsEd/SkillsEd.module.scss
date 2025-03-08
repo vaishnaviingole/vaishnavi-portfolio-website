@@ -1,13 +1,15 @@
 .container {
   display: flex;
   padding: 2rem;
+  flex-wrap: wrap; /* Ensure responsive design */
 }
 
-.education {
-  flex: 1; /* Adjust to occupy the entire left side */
+.education, .skills, .experience {
+  flex: 1; /* Adjust to occupy space equally */
+  margin-right: 2rem; /* Space between sections */
 }
 
-.educationHeader {
+.educationHeader, .skillHeader, .experienceHeader {
   background: linear-gradient(135deg, teal, skyblue);
   padding: 1.5rem;
   color: white;
@@ -17,51 +19,9 @@
   font-size: large;
 }
 
-.educationContent {
+.educationContent, .skillContent, .experienceContent {
   background: white;
-  border: 3px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Add gradient border */
-  padding: 5rem;
-  border-radius: 0.5rem;
-  margin-top: 1.5rem;
-  font-size: large;
-  color: rgb(8, 110, 110);
-  font-size: large;
-  font-weight:500;
-}
-
-.educationItem {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-
-  img {
-    width: 60px;
-    margin-right: 2rem;
-  }
-
-  p {
-    margin: 0;
-  }
-}
-
-.skills {
-  flex: 1; /* Adjust to occupy the entire right side */
-  margin-left: 2rem; /* Add margin for separation between education and skills */
-}
-
-.skillHeader {
-  background: linear-gradient(135deg, teal, skyblue);
-  padding: 1.5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-   font-size: large;
-}
-
-.skillContent {
-  background: white;
-  border: 10px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Add gradient border */
+  border: 10px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Gradient border */
   padding: 1.5rem;
   border-radius: 0.5rem;
   margin-top: 1.5rem;
@@ -69,11 +29,30 @@
   font-weight: bold;
   display: flex;
   color: rgb(8, 110, 110);
-  flex-wrap: wrap; /* Make the content wrap into multiple rows */
-  justify-content: space-between; /* Spread the content evenly */
+  flex-wrap: wrap; /* Make content responsive */
+  justify-content: space-between; /* Spread content evenly */
 }
 
-.skillItem {
+.educationItem, .experienceItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.educationItem img, .experienceItem img {
+  width: 60px;
+  margin-right: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+.skills {
+  margin-left: 2rem;
+}
+
+.skillItem, .experienceItem {
   width: 48%; /* Set the width to occupy two columns */
   display: flex;
   flex-direction: column;
@@ -88,7 +67,7 @@
 
   img {
     width: 200px;
-    height: 120px; /* Set the height to maintain the aspect ratio */
+    height: 120px; /* Set height for maintaining aspect ratio */
     margin-bottom: 1rem;
   }
 
@@ -96,4 +75,47 @@
     margin: 0;
     font-size: 0.9rem;
   }
+}
+
+.experience {
+  flex: 1; /* Same flex as education and skills */
+}
+
+.experienceHeader {
+  background: linear-gradient(135deg, teal, skyblue);
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.experienceContent {
+  background: white;
+  border: 10px solid linear-gradient(135deg, teal, skyblue, lightgreen); /* Gradient border */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  color: rgb(8, 110, 110);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.experienceItem p {
+  margin: 0.5rem 0;
+}
+
+.experienceItem strong {
+  font-size: 1.1rem;
+  color: #34495e;
 }

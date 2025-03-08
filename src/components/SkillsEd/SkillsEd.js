@@ -10,10 +10,12 @@ import htmlLogo from './html-logo.png';
 import cssLogo from './css-logo.png';
 import gitLogo from './git-logo.png';
 import springLogo from './spring-logo.png';
+import wiproLogo from './wipro-logo.png'; // Add the Wipro logo here
 
 export default function SkillsAndEducation() {
   return (
     <div className={Style.container}>
+      {/* Education Section */}
       <div className={Style.education}>
         <div className={Style.educationHeader}>
           <span>🎓 Education</span>
@@ -22,23 +24,24 @@ export default function SkillsAndEducation() {
           <div className={Style.educationItem}>
             <img src={uniLogo} alt="University Logo" />
             <div>
-            <p>Bachelor of Engineering(BE) in Computer Science</p>
-            <p>Sant Gadge Baba Amravati University, 2018-2022</p>
+              <p>Bachelor of Engineering(BE) in Computer Science</p>
+              <p>Sant Gadge Baba Amravati University, 2018-2022</p>
             </div>
           </div>
           <div className={Style.educationItem}>
             <img src={cdacLogo} alt="Institute Logo" />
             <div>
-            <p>Postgraduate Diploma in Advanced Computing (PG-DAC)</p>
-            <p>Institute For Software Devlopment and Advance Computing, 2022-2023</p>
+              <p>Postgraduate Diploma in Advanced Computing (PG-DAC)</p>
+              <p>Institute For Software Development and Advanced Computing, 2022-2023</p>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Skills Section */}
       <div className={Style.skills}>
         <div className={Style.skillHeader}>
-          <span>💼 Skills</span>
+          <span>💻 Skills</span> {/* Changed emoji */}
         </div>
         <div className={Style.skillContent}>
           <div className={Style.skillRow}>
@@ -79,6 +82,24 @@ export default function SkillsAndEducation() {
               <p>GIT</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Experience Section */}
+      <div className={Style.experience}>
+        <div className={Style.experienceHeader}>
+          <span>💼 Experience</span>
+        </div>
+        <div className={Style.experienceContent}>
+          <div className={Style.experienceItem}>
+            <img src={wiproLogo} alt="Wipro Logo" style={{ width: '60px', marginBottom: '1rem' }} />
+            <div>
+              <p><strong>Project Engineer - Wipro</strong></p>
+              <p>July 2023 - Present</p>
+              <p>Enhancing and customizing ServiceNow applications, focusing on system integrations and automating workflows. Expertise in JavaScript and REST API development.</p>
+            </div>
+          </div>
+          {/* Add more experience items as needed */}
         </div>
       </div>
     </div>
