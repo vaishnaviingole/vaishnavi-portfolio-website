@@ -42,7 +42,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Driven software developer seeking exciting job opportunities"
+            text: "Project Engineer At WIPRO"
         },
         {
             emoji: "📧",
@@ -76,7 +76,9 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: " I am a 2022 CSE graduate and PG-DAC diploma holder.  Seeking exciting opportunities, I am on a code-tastic journey, passionate about crafting innovative solutions.  My academic exploits serve as the source code that fuels my enthusiasm for software development.  Eager to contribute my skills, I thrive on challenges – debugging problems and creating solutions. Let's embark on a coding adventure and create something extraordinary together! 🚀✨",
+    bio: " I’m a Software Engineer and Project Engineer at Wipro, specializing in full-stack development with expertise in Java, Spring Boot, React, MySQL, and ServiceNow. Passionate about solving complex problems and building scalable applications, I focus on optimizing system integrations and automating workflows. Always eager to learn, I’m driven to create impactful, innovative solutions 🚀✨"
+
+ ,
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
